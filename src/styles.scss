@@ -1,0 +1,107 @@
+
+body{
+    margin: 0;
+}
+/* #region Navigation */
+nav{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 100px;
+    background-color: #dce1e9;    
+    padding: 15px;    
+   
+   
+    a{
+        text-decoration: none;
+        color:#536b84;
+        font-size: 22px;
+        font-weight: bold;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+/* #endregion */
+
+/* #region Location Container */
+.locationContainer {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://c0.wallpaperflare.com/preview/516/488/952/weather-clouds-trees-blue-sky.jpg");
+  background-size: cover;
+  padding: 20px;
+  height: 250px;
+  padding-top: 100px;
+
+  .locationsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px;
+  }
+
+  .locationsHeading {
+    h2#proadjaneLokacijeNaslov {
+      color: #183056;
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+
+  .locationsFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .location {
+    background-color: rgba(255, 254, 254, 0.8);
+    border-radius: 25px;
+    padding: 10px;
+    height: 120px;
+
+    #lokacijeNaslov {
+      font-size: 22px;
+      color: #183056;
+      font-weight: bold;
+    }
+
+    #adresa {
+      color: orange;
+      display: inline;
+    }
+  }
+}
+/* #endregion */
+
+/* #region footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #183056;
+  color: #ffffff;
+  padding: 13px;
+  height: 50px;
+  a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+   
+  }
+  .leftFooter{
+    display: flex;
+    justify-content: space-evenly;
+    gap:50px; 
+    margin-left:-10%;
+  }
+  .rightFooter{
+    display: flex;
+    margin-right:-10%;
+  }
+  
+}
+/* #endregion */
