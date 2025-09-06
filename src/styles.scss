@@ -105,3 +105,86 @@ footer {
   
 }
 /* #endregion */
+
+/* #region Car */
+.carContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  padding-right: 0;
+
+
+  #showcaseImg {
+    width: 700px;
+    height: 400px;
+  }
+
+ 
+  .CarShowcase {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .Showcase {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 15px;
+
+      .CarDetails {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 50px 50px; 
+        color: #183056;
+        p {
+          margin: 0;
+        }
+        .colorBox {
+          display: inline-block;   
+          width: 20px;
+          height: 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-right: 8px;       
+          vertical-align: middle;  
+}
+      }
+    }
+  }
+
+  .CarCollection {
+  flex: 1;
+  display: flex;
+  flex-direction: row;   
+  flex-wrap: wrap;       
+  gap: 20px;
+  align-content: flex-start; 
+  
+
+  .CarBtn {
+  display: flex;
+  flex-direction: column;   
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  color: #183056;
+  cursor: pointer;
+  height: 130px;
+  width: 120px;            
+
+  img {
+    width: 100%;           
+    height: auto;
+    margin-bottom: 8px;     
+  }
+
+    &.active {
+      border: 2px solid orange;
+      background-color: #fdf2e0;
+    }
+  }
+}
+}
+/*endregion */
